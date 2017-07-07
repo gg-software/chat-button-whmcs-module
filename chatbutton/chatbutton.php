@@ -10,7 +10,15 @@ function chatbutton_config()
     'description'   => 'A simple module to enable the chat button in the client area to work with Intercom.',
     'version'       => '1.0',
     'author'        => 'Jake Walker',
-    'fields'        => array()
+    'fields'        => array(
+      'button_class' => array(
+        'FriendlyName'  => 'Element Class to Match',
+        'Type'          => 'text',
+        'Size'          => '64',
+        'Description'   => 'Which class should the plugin listen for?',
+        'Default'       => 'chat-button'
+      )
+    )
   );
 
   return $configarray;
